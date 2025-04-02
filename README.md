@@ -3,7 +3,7 @@
 📦 auth-hub
 ├── 📁 backend                  # Servidor central de autenticação
 ├── 📁 idp                      # Identity Provider (SSO)
-├── 📁 ecommerce                # Aplicação de e-commerce autenticada via Auth-Hub
-├── 📁 blog                     # Plataforma de blog autenticada via Auth-Hub
+├── 📁 ecommerce                # APP e-commerce autenticada via SSO
+├── 📁 blog                     # Plataforma de blog autenticada via SSO
 ```
 Doc in progress
