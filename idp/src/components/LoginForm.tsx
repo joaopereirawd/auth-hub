@@ -1,6 +1,7 @@
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 
-const GOOGLE_CLIENT_ID = "986349063505-4rk8hkvo15n5t286c7495trgvqaocjne.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_API_URL;
+
 
 export const LoginForm = () => {
 

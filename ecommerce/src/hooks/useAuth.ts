@@ -14,12 +14,13 @@ export const useAuth = () => {
 
                 if (data.authenticated) {
                     setUser(data.user);
+                    console.log(data.user, 'data.user');
                 } else {
                     window.location.href = "http://localhost:5173"; // 🔄 Redireciona o ecommerce
                 }
             } catch (error) {
                 console.error("Erro na autenticação:", error);
-                window.location.href = "http://localhost:5174/"; // 🔄 Redireciona para o login
+                window.location.href = "http://localhost:5173/"; // 🔄 Redireciona para o login
             } finally {
                 setLoading(false);
             }

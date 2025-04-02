@@ -81,6 +81,8 @@ app.get("/user", async (req, res) => {
 });
 
 // Session verification
+// Este endpoint verifica se o utilizador tem um token válido e devolve authenticated: true ou false.
+
 app.get("/auth/me", async (req, res) => {
   const token = req.cookies.token;
   if (!token) return res.status(401).json({ authenticated: false });
