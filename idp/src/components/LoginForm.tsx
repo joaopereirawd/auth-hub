@@ -17,7 +17,7 @@ export const LoginForm = () => {
 
         if (data.success) {
             // Redirecionar para a aplicação original (E-commerce ou Blog)
-            window.location.href = localStorage.getItem("redirect_to") || "http://localhost:5173/library";
+            window.location.href = localStorage.getItem("redirect_to") || "http://localhost:5173";
         }
     };
 

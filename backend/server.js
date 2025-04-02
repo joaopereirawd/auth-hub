@@ -9,7 +9,7 @@ const app = express();
 const allowedOrigins = ["http://localhost:5173", "http://localhost:5174"];
 
 app.use(
-  cors({
+  cors({  
     origin: (origin, callback) => {
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
@@ -26,7 +26,6 @@ app.use(express.json());
 app.use(cookieParser());
 
 const CLIENT_ID = process.env.CLIENT_ID;
-const REDIRECT_URI = "http://localhost:5173/callback";
 
 // Criar cliente OAuth
 const client = new OAuth2Client(CLIENT_ID);
@@ -45,6 +44,7 @@ app.post("/auth/google", async (req, res) => {
     });
 
     const payload = ticket.getPayload(); // Dados do utilizador Google (email, nome, etc.)
+
     console.log("Login bem-sucedido:", payload);
 
     // Criar um cookie de sessão (ID Token)
