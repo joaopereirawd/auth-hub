@@ -16,7 +16,7 @@ export const useAuth = () => {
                     setUser(data.user);
                     console.log(data.user, 'data.user');
                 } else {
-                    window.location.href = "http://localhost:5173"; // 🔄 Redireciona o login
+                    window.location.href = "http://localhost:5173"; // 🔄 Redireciona o ecommerce
                 }
             } catch (error) {
                 console.error("Erro na autenticação:", error);
