@@ -1,0 +1,14 @@
+{
+    "name": "oauth-system-backend",
+    "version": "1.0.0",
+    "description": "OAuth system backend",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^16.3.1",
+        "google-auth-library": "^9.15.1"
+    }
+}
