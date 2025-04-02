@@ -1,4 +1,4 @@
-# SSO Login System
+# Single Sign-On System
 ```
 📦 auth-hub
 ├── 📁 backend                  # Servidor central de autenticação
